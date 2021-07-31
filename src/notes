@@ -1,3 +1,12 @@
 angular features
 1. component
 2.module
+3.data binding - for synchronizing component (class ie ts file
+) and view(html)
+    1. oneway binding
+        1. data flow from component to view
+            1. string interpolation or interpolation {{}}
+            2. property binding []
+        2.  data flow from view to component
+
+    2. twoway binding
