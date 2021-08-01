@@ -5,10 +5,10 @@
     <table class="tb">
       
       <tr id="p1"><label for="">Account Number</label>
-        <input type="text" class="form-control" id="acno" [value]="account">
+        <input type="text" class="form-control" id="acno" name="accno" [(ngModel)]="accno" (change)="ChangeAcc($event)" [value]="accno">
       </tr>
       <tr id="p2"><label for="">Password</label>
-        <input type="password" class="form-control" id="pwd">
+        <input type="password" class="form-control" id="pwd" name="pwd" [(ngModel)]="pwd" (change)="ChangePwd($event)">
       </tr>
       <tr>
         <div class="form-check">
@@ -19,7 +19,7 @@
       </div>
       </tr>
       
-      <tr><button type="button" class="btn btn-primary" onclick="">SUBMIT</button></tr>
+      <tr><button type="button" class="btn btn-primary" (click)="login()">SUBMIT</button></tr>
     </table>
   
 

@@ -1,12 +1,18 @@
 angular features
 1. component
 2.module
-3.data binding - for synchronizing component (class ie ts file
-) and view(html)
+3.data binding - for synchronizing component (class ie ts file) and view(html)
     1. oneway binding
         1. data flow from component to view
             1. string interpolation or interpolation {{}}
             2. property binding []
         2.  data flow from view to component
+            1. event binding reqd place give '(event)="function()"', then define this fn in ts file
+            2. event binding using argument as $event '(event)="function()"'
+            3. event binding using template reference #variablename
 
     2. twoway binding
+        1. ngModel -FormsModule [(ngModel)]="binding-source", name should be set for the property
+4. Dependency injection -taking the property of one class which is alrdy defined and using it as a property of another class
+5. routing -navigatebyurl which is a property of Router
+        
