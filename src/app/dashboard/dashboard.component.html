@@ -1,1 +1,50 @@
-<p>dashboard works!</p>
+<h1 id="pls"> Welcome User</h1>
+
+    <table class="tb2">
+        <tr>
+            <td>
+                <div class="wd" >
+                    <form  (ngSubmit)="deposit()">
+                        <div id="one"> <label for="">Account Number</label>
+                            <input type="text" class="form-control tx" id="acno" name="acno" [(ngModel)]="acno"></div> 
+                        <div id="one"><label for="">Password</label>
+                            <input type="password" class="form-control tx" id="pwd" name="password" [(ngModel)]="password"></div>
+                        <div id="one"><label for="">Amount</label>
+                            <input type="text" class="form-control tx" id="amt" name="amount" [(ngModel)]="amount"></div>
+                        <div><button type="button" class="btn btn-success b2" (click)="deposit()">deposit</button></div>
+                
+                    </form>
+                </div>
+
+            </td>
+            <td>
+                <form  (ngSubmit)="withdraw()">
+                    <div class="wd">
+                        <div id="one"> <label for="">Account Number</label>
+                                <input type="text" class="form-control tx" id="wacno" name="wacno" [(ngModel)]="wacno"></div> 
+                            <div id="one"><label for="">Password</label>
+                                <input type="password" class="form-control tx" id="wpwd" name="wpassword" [(ngModel)]="wpassword"></div>
+                            <div id="one"><label for="">Amount</label>
+                                <input type="text" class="form-control tx" id="wamt" name="wamount" [(ngModel)]="wamount"></div>
+                            <div><button type="button" class="btn btn-primary b1" (click)="withdraw()">withdraw</button></div>
+                    </div>
+                </form>
+                
+            </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+                    
+        
+            
+  
+
+
+    
+    
+    

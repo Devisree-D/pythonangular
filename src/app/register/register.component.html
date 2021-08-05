@@ -1,0 +1,25 @@
+<div class="container col-md-3 col-lg-4">
+    <h1> Welcome to YES Bank </h1>
+    <br>
+      <h3>{{aim}}</h3>
+      <form [formGroup]="registerForm" (ngSubmit)="register()">
+        <table class="tb">
+      
+        <tr id="p2"><label for="">Username</label>
+          <input type="text" class="form-control" id="uname" formControlName="uname" >
+        </tr>
+
+          <tr><div class="error">Username is required</div> </tr>
+        
+        <tr id="p1"><label for="">Account Number</label>
+          <input type="text" class="form-control" id="acno" formControlName="acno">
+        </tr>
+        <tr id="p2"><label for="">Password</label>
+          <input type="password" class="form-control" id="password" formControlName="password">
+        </tr>
+        <tr><button type="submit" class="btn btn-primary" (click)="register()">Register</button></tr>
+        <tr><a routerLink="">Already have ac?</a></tr>
+        </table>
+      </form>
+</div>
+

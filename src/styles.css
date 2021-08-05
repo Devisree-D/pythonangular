@@ -5,16 +5,55 @@ h1{
 h3{
     margin-left: 20%;
 }
+#pls{
+    margin-left: 40%;
+}
 .container{
     background-color: rgb(238, 243, 233);
     border-style: solid;
     width:700px ;
-    height:500px ;
+    height:600px ;
     margin-top: 5%;
 }
 .tb{
     margin-left: 30%;
     margin-top: 10%;
+
+}
+.tb2{
+    margin-left: 15%;
+}
+.wd{
+    background-color: rgb(182, 111, 214);
+    border-style: solid;
+    width:500px ;
+    height:400px ;
+    margin-left: 10%;
+}
+.tx{
+    width: 400px;
+    height: 40px;
+}
+#one{font-size: large;
+    text-align: center;
+    width: 600px;
+    height: 60px;
+    margin-left: 3%;
+    margin-top: 5%;
+
+}
+.b1{ margin-left: 30%;
+    margin-top: 5%;
+    width: 200px;
+    height: 52px;
+    background-color: rgba(24, 85, 218, 0.74);
+
+}
+.b2{ margin-left: 30%;
+    margin-top: 5%;
+    width: 200px;
+    height: 52px;
+    background-color: green
 
 }
 /* #p1{

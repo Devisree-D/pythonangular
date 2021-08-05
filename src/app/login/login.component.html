@@ -1,27 +1,30 @@
 <div class="container col-md-3 col-lg-4">
     <h1> Welcome to YES Bank </h1>
     <br><h3>{{aim}}</h3>
+    <form action="" (ngSubmit)="login()">
+      <table class="tb">
       
-    <table class="tb">
-      
-      <tr id="p1"><label for="">Account Number</label>
-        <input type="text" class="form-control" id="acno" name="accno" [(ngModel)]="accno" (change)="ChangeAcc($event)" [value]="accno">
-      </tr>
-      <tr id="p2"><label for="">Password</label>
-        <input type="password" class="form-control" id="pwd" name="pwd" [(ngModel)]="pwd" (change)="ChangePwd($event)">
-      </tr>
-      <tr>
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Remember me
-        </label>
-      </div>
-      </tr>
-      
-      <tr><button type="button" class="btn btn-primary" (click)="login()">SUBMIT</button></tr>
-    </table>
+        <tr id="p1"><label for="">Account Number</label>
+          <input type="text" class="form-control" id="acno" name="acno" [(ngModel)]="acno" (change)="ChangeAcc($event)" [value]="acno">
+        </tr>
+        <tr id="p2"><label for="">Password</label>
+          <input type="password" class="form-control" id="password" name="password" [(ngModel)]="password" (change)="ChangePwd($event)">
+        </tr>
+        <tr>
+          <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember me
+          </label>
+        </div>
+        </tr>
+        
+        <tr><button type="submit" class="btn btn-primary" (click)="login()">Login</button></tr>
+        <tr><button type="submit" class="btn btn-primary" (click)="register()">New user register</button></tr>
+      </table>
+    
   
-
+    </form>
+    
 
   </div>

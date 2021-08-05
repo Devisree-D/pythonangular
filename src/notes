@@ -13,6 +13,11 @@ angular features
 
     2. twoway binding
         1. ngModel -FormsModule [(ngModel)]="binding-source", name should be set for the property
-4. Dependency injection -taking the property of one class which is alrdy defined and using it as a property of another class
+4. Dependency injection -when there are 2 dependent classes, instance of one class is taken to the object of the other class
+   eg:routing,acdetails
 5. routing -navigatebyurl which is a property of Router
-        
+6. services - in angular reusable are codes specified in this feature 
+7.reactiveforms- to incorporate validations in angular
+        1.form group-before designing html, the model is designed in component
+        2.form array
+        3.form control
